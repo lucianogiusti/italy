@@ -39,7 +39,7 @@ a:hover {
   height: 100vh;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  background: url(italyflag.jpg) no-repeat center center;
+  background: url(./imgs/italyflag.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
