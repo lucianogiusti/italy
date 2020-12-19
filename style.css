@@ -33,12 +33,11 @@ a:hover {
 /* COVER */
 
 .container {
-  display: grid;
-  flex-direction: row;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   justify-content: center;
   height: 100vh;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   background: url(./imgs/italyflag.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -48,29 +47,25 @@ a:hover {
 }
 
 .one {
-  margin-block-start: 3em;
-  margin-inline-start: 1em;
-  color: rgb(4, 56, 20);
-  justify-self: center;
-  align-self: center;
   text-transform: none;
-}
-
-.two {
-  grid-row: 2;
-  margin-block-start: 3em;
-  margin-inline-start: 1em;
-  color: rgb(4, 56, 20);
-  text-transform: none;
+  background-color: rgba(27, 25, 25, 0.9);
+  color: rgb(150, 204, 166);
+  padding: 1em;
+  margin: 1em;
 }
 
 .tags {
-  display: grid;
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: 100vh;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  align-content: center;
+  gap: 100px;
+  /* height: 100vh;
+  grid-template-columns: repeat(auto-fill, minmax(900px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(700px, 1fr);
+  grid-gap: 20px;
+  justify-items: end; */
 }
 
 .h-links {
@@ -101,9 +96,6 @@ a:hover {
   }
   .container {
     font-size: 0.8em;
-    padding: 0;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
   }
 }
 
